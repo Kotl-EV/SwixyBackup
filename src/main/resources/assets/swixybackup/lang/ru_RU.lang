@@ -1,0 +1,9 @@
+#Backup
+swixybackup:backup.start=§6[Backup] §aЗапуск бэкапа!
+swixybackup:backup.done=§6[Backup] §aБэкап сервера выполнен!
+swixybackup:backup.failed=§6[Backup] §cСбой бэкапа сервера!
+swixybackup:backup.next=§6[Backup] §aСледующий бэкап через %s минут.
+
+#Command
+swixybackup:command.alreadyrunning=§6[Backup] §cРезервная копия уже запущена.
+swixybackup:command.playerstarted=§6[Backup] §d%s §aзапустил резервное копирование.

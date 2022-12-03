@@ -1,0 +1,10 @@
+#Backup
+swixybackup:backup.start=§6[Backup] §aStarting Backup. The server may lag for a bit!
+swixybackup:backup.done=§6[Backup] §aServer Backup done!
+swixybackup:backup.failed=§6[Backup] §cServer Backup failed!
+swixybackup:backup.next=§6[Backup] §aNext scheduled Backup in %s minutes.
+
+
+#Command
+swixybackup:command.alreadyrunning=§6[Backup] §cA backup is already running.
+swixybackup:command.playerstarted=§6[Backup] §d%s §astarted a backup.

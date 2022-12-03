@@ -1,0 +1,113 @@
+[20:09:15] [main/INFO]: Extra: []
+[20:09:15] [main/INFO]: Found and added coremod: ml.luxinfine.permissions.PermissionsLoadingPlugin
+[20:09:15] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Kotl/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[20:09:15] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:09:15] [main/INFO]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:09:15] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[20:09:15] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[20:09:15] [main/INFO]: Forge Mod Loader version 7.99.40.1614 for Minecraft 1.7.10 loading
+[20:09:15] [main/INFO]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_352, running on Windows 10:amd64:10.0, installed at C:\Program Files\BellSoft\LibericaJDK-8\jre
+[20:09:15] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[20:09:15] [main/INFO]: Found a command line coremod : ml.luxinfine.permissions.PermissionsLoadingPlugin
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: java.lang.NoClassDefFoundError: ml/luxinfine/hooklib/minecraft/HookLoader
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.ClassLoader.defineClass1(Native Method)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.security.AccessController.doPrivileged(Native Method)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:117)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.Class.forName0(Native Method)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.Class.forName(Class.java:348)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.relauncher.CoreModManager.loadCoreMod(CoreModManager.java:460)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.relauncher.CoreModManager.handleLaunch(CoreModManager.java:219)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.relauncher.FMLLaunchHandler.setupHome(FMLLaunchHandler.java:90)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.relauncher.FMLLaunchHandler.setupClient(FMLLaunchHandler.java:67)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.relauncher.FMLLaunchHandler.configureForClientLaunch(FMLLaunchHandler.java:34)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.common.launcher.FMLTweaker.injectIntoClassLoader(FMLTweaker.java:126)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:115)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at GradleStart.main(Unknown Source)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: Caused by: java.lang.ClassNotFoundException: ml.luxinfine.hooklib.minecraft.HookLoader
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	... 24 more
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: Caused by: java.lang.NullPointerException
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	... 26 more
+[20:09:15] [main/ERROR]: An error occurred trying to configure the minecraft home at E:\GitHub\AromaBackup\run\. for Forge Mod Loader
+java.lang.NoClassDefFoundError: ml/luxinfine/hooklib/minecraft/HookLoader
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_352]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756) ~[?:1.8.0_352]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[?:1.8.0_352]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473) ~[?:1.8.0_352]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74) ~[?:1.8.0_352]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369) ~[?:1.8.0_352]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363) ~[?:1.8.0_352]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_352]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362) ~[?:1.8.0_352]
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:117) ~[launchwrapper-1.12.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[?:1.8.0_352]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[?:1.8.0_352]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_352]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_352]
+	at cpw.mods.fml.relauncher.CoreModManager.loadCoreMod(CoreModManager.java:460) ~[forgeBin-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.relauncher.CoreModManager.handleLaunch(CoreModManager.java:219) ~[forgeBin-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.relauncher.FMLLaunchHandler.setupHome(FMLLaunchHandler.java:90) [forgeBin-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.relauncher.FMLLaunchHandler.setupClient(FMLLaunchHandler.java:67) [forgeBin-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.relauncher.FMLLaunchHandler.configureForClientLaunch(FMLLaunchHandler.java:34) [forgeBin-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.launcher.FMLTweaker.injectIntoClassLoader(FMLTweaker.java:126) [forgeBin-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:115) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
+	at GradleStart.main(Unknown Source) [start/:?]
+Caused by: java.lang.ClassNotFoundException: ml.luxinfine.hooklib.minecraft.HookLoader
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191) ~[launchwrapper-1.12.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[?:1.8.0_352]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[?:1.8.0_352]
+	... 24 more
+Caused by: java.lang.NullPointerException
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[launchwrapper-1.12.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[?:1.8.0_352]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[?:1.8.0_352]
+	... 24 more
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: java.lang.NoClassDefFoundError: ml/luxinfine/hooklib/minecraft/HookLoader
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.ClassLoader.defineClass1(Native Method)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.security.AccessController.doPrivileged(Native Method)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:117)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.Class.forName0(Native Method)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.Class.forName(Class.java:348)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.relauncher.CoreModManager.loadCoreMod(CoreModManager.java:460)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.relauncher.CoreModManager.handleLaunch(CoreModManager.java:219)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.relauncher.FMLLaunchHandler.setupHome(FMLLaunchHandler.java:90)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.relauncher.FMLLaunchHandler.setupClient(FMLLaunchHandler.java:67)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.relauncher.FMLLaunchHandler.configureForClientLaunch(FMLLaunchHandler.java:34)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at cpw.mods.fml.common.launcher.FMLTweaker.injectIntoClassLoader(FMLTweaker.java:126)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:115)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at GradleStart.main(Unknown Source)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: Caused by: java.lang.ClassNotFoundException: ml.luxinfine.hooklib.minecraft.HookLoader
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	... 24 more
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: Caused by: java.lang.NullPointerException
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182)
+[20:09:15] [main/INFO]: [java.lang.Throwable$WrappedPrintStream:println:749]: 	... 26 more
