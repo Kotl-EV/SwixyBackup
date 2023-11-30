@@ -7,6 +7,7 @@ package swixy.backup;
 import java.util.*;
 
 import com.gamerforea.eventhelper.util.EventUtils;
+import ml.luxinfine.config.Config;
 import ml.luxinfine.helper.utils.PlayerUtils;
 import swixy.backup.api.BackupEvent;
 import swixy.backup.util.Util;
@@ -93,11 +94,11 @@ public class ThreadBackup extends Thread
             WorldIndex.add(binfo);
             WorldIndex.save();
             Util.logger.log(Level.INFO,"Сохранение индекса мира.");
-            delay = ModConfig.delay * 60000L;
+            delay = ModConfig.general.delay * 60000L;
             PlayerUtils.getOnlinePlayers().stream().filter(player -> EventUtils.hasPermission(player,"backup.info")).forEach(player -> MsgUtils.send(player, "swixybackup:backup.done"));
         }
         catch (Exception e4) {
-            delay = ModConfig.delay * 60000L / 2L;
+            delay = ModConfig.general.delay * 60000L / 2L;
             PlayerUtils.getOnlinePlayers().stream().filter(player -> EventUtils.hasPermission(player,"backup.info")).forEach(player -> MsgUtils.send(player, "swixybackup:backup.failed"));
             Util.logger.log(Level.INFO,"Сбой резервного копирования сервера!", (Throwable)e4);
         }
@@ -107,10 +108,10 @@ public class ThreadBackup extends Thread
             Util.logger.log(Level.INFO,"Следующее резервное копирование через " + delay / 60000L + " мин.");
             this.setLevelSaving(true);
             Util.logger.log(Level.INFO,"Запущено автосохранение мира.");
-            PlayerUtils.getOnlinePlayers().stream().filter(player -> EventUtils.hasPermission(player,"backup.info")).forEach(player -> MsgUtils.send(player, "swixybackup:backup.next", ModConfig.delay / 2L));
+            PlayerUtils.getOnlinePlayers().stream().filter(player -> EventUtils.hasPermission(player,"backup.info")).forEach(player -> MsgUtils.send(player, "swixybackup:backup.next", ModConfig.general.delay));
             try {
-                if (ModConfig.toKeep != 0) {
-                    for (int removes = WorldIndex.getList().size() - ModConfig.toKeep, i = 0; i < removes; ++i) {
+                if (ModConfig.general.toKeep != 0) {
+                    for (int removes = WorldIndex.getList().size() - ModConfig.general.toKeep, i = 0; i < removes; ++i) {
                         final BackupInformation binfo2 = WorldIndex.getList().get(i);
                         final File to2 = binfo2.getFile();
                         to2.delete();
@@ -135,16 +136,16 @@ public class ThreadBackup extends Thread
     }
 
     public boolean shouldSaveDimension(final int dim) {
-        if (ModConfig.useWhitelist) {
-            for (int i = 0; i < ModConfig.whitelist.size(); ++i) {
-                if (ModConfig.whitelist.get(i) == dim) {
+        if (ModConfig.general.useWhitelist) {
+            for (int i = 0; i < ModConfig.general.whitelist.size(); ++i) {
+                if (ModConfig.general.whitelist.get(i) == dim) {
                     return true;
                 }
             }
             return false;
         }
-        for (int i = 0; i < ModConfig.blacklist.size(); ++i) {
-            if (ModConfig.blacklist.get(i) == dim) {
+        for (int i = 0; i < ModConfig.general.blacklist.size(); ++i) {
+            if (ModConfig.general.blacklist.get(i) == dim) {
                 return false;
             }
         }
@@ -200,7 +201,7 @@ public class ThreadBackup extends Thread
     private void compress(final String to, final Set<Map.Entry<File, String>> additionalFiles) throws Exception {
         final FileOutputStream fos = new FileOutputStream(to);
         final ZipOutputStream zip = new ZipOutputStream(fos);
-        zip.setLevel(ModConfig.compressionRate);
+        zip.setLevel(ModConfig.general.compressionRate);
         final File[] files = Util.getWorldFolder().listFiles();
         final List<String> folders = new ArrayList<String>();
         for (final File file : files) {
@@ -269,9 +270,9 @@ public class ThreadBackup extends Thread
             Util.logger.log(Level.INFO,"Not doing a backup, because another backup is already running.");
             return false;
         }
-        if (!force && ModConfig.skipBackup && !ThreadBackup.shouldBackup) {
+        if (!force && ModConfig.general.skipBackup && !ThreadBackup.shouldBackup) {
             Util.logger.log(Level.INFO,"Skipping world backup because no players were on the server.");
-            ThreadSchedule.nextbackup = System.currentTimeMillis() + ModConfig.delay * 60000L;
+            ThreadSchedule.nextbackup = System.currentTimeMillis() + ModConfig.general.delay * 60000L;
             Util.logger.log(Level.INFO,"Next Backup in: " + (ThreadSchedule.nextbackup - System.currentTimeMillis() + 1L) / 60000L + " minutes.");
             return false;
         }

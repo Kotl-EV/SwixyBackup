@@ -45,7 +45,7 @@ public class SwixyBackup
     public void serverStarting(final FMLServerStartingEvent event) {
         event.registerServerCommand(new BackupCommand());
         WorldIndex.load();
-        if (ModConfig.delay * 60000L != 0L) {
+        if (ModConfig.general.delay * 60000L != 0L) {
             ThreadSchedule.startNewThread();
         }
         ThreadBackup.shouldBackup = true;
@@ -56,7 +56,7 @@ public class SwixyBackup
         try {
             final BasicFileAttributes attr = Files.readAttributes(Util.getWorldFolder().toPath(), BasicFileAttributes.class, new LinkOption[0]);
             final long fileCreated = attr.creationTime().toMillis();
-            if (ModConfig.onStartup) {
+            if (ModConfig.general.onStartup) {
                 if (fileCreated > System.currentTimeMillis() - 10000L && fileCreated <= System.currentTimeMillis()) {
                     ThreadSchedule.nextbackup = System.currentTimeMillis() + 60000L;
                 }
@@ -65,15 +65,15 @@ public class SwixyBackup
                 }
             }
             else {
-                ThreadSchedule.nextbackup = System.currentTimeMillis() + ModConfig.delay * 60000L;
+                ThreadSchedule.nextbackup = System.currentTimeMillis() + ModConfig.general.delay * 60000L;
             }
         }
         catch (IOException e) {
-            if (ModConfig.onStartup) {
+            if (ModConfig.general.onStartup) {
                 ThreadSchedule.nextbackup = System.currentTimeMillis() + 60000L;
             }
             else {
-                ThreadSchedule.nextbackup = System.currentTimeMillis() + ModConfig.delay * 60000L;
+                ThreadSchedule.nextbackup = System.currentTimeMillis() + ModConfig.general.delay * 60000L;
             }
             e.printStackTrace();
         }

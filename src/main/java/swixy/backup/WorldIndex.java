@@ -70,7 +70,7 @@ public class WorldIndex
     }
     
     private static File getFile() {
-        return new File(ModConfig.location + "/" + Util.getWorldName() + "/backupstore.txt");
+        return new File(ModConfig.general.location + "/" + Util.getWorldName() + "/backupstore.txt");
     }
     
     static ArrayList<BackupInformation> getList() {

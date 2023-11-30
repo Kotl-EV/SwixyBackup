@@ -13,10 +13,12 @@
     <orderEntry type="module-library" scope="PROVIDED">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/Kotl/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forgeBin-1.7.10-10.13.4.1614-1.7.10.jar!/"/>
+          <root url="jar://C:/Users/Kotl/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar!/"/>
         </CLASSES>
         <JAVADOC/>
-        <SOURCES/>
+        <SOURCES>
+          <root url="jar://C:/Users/Kotl/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forgeSrc-1.7.10-10.13.4.1614-1.7.10-sources.jar!/"/>
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="PROVIDED">
@@ -689,7 +691,7 @@
     <orderEntry type="module-library" scope="PROVIDED">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/LuxinfineHelper-1.36-dev.jar!/"/>
+          <root url="jar://$MODULE_DIR$/libs/LuxinfineHelper-u-dev.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES/>
@@ -734,10 +736,12 @@
     <orderEntry type="module-library" scope="RUNTIME">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/Kotl/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forgeBin-1.7.10-10.13.4.1614-1.7.10.jar!/"/>
+          <root url="jar://C:/Users/Kotl/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar!/"/>
         </CLASSES>
         <JAVADOC/>
-        <SOURCES/>
+        <SOURCES>
+          <root url="jar://C:/Users/Kotl/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forgeSrc-1.7.10-10.13.4.1614-1.7.10-sources.jar!/"/>
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="RUNTIME">
@@ -1446,7 +1450,7 @@
     <orderEntry type="module-library" scope="RUNTIME">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/LuxinfineHelper-1.36-dev.jar!/"/>
+          <root url="jar://$MODULE_DIR$/libs/LuxinfineHelper-u-dev.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES/>
@@ -1464,10 +1468,12 @@
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/Kotl/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forgeBin-1.7.10-10.13.4.1614-1.7.10.jar!/"/>
+          <root url="jar://C:/Users/Kotl/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar!/"/>
         </CLASSES>
         <JAVADOC/>
-        <SOURCES/>
+        <SOURCES>
+          <root url="jar://C:/Users/Kotl/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forgeSrc-1.7.10-10.13.4.1614-1.7.10-sources.jar!/"/>
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="TEST">
@@ -2167,7 +2173,7 @@
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/LuxinfineHelper-1.36-dev.jar!/"/>
+          <root url="jar://$MODULE_DIR$/libs/LuxinfineHelper-u-dev.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES/>

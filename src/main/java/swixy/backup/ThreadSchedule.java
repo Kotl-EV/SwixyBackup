@@ -18,7 +18,7 @@ public class ThreadSchedule extends Thread
         this.shouldrun = true;
         (ThreadSchedule.instance = this).setName("SwixyBackup-Schedule");
         this.setDaemon(true);
-        ThreadSchedule.nextbackup = System.currentTimeMillis() + ModConfig.delay * 60000L;
+        ThreadSchedule.nextbackup = System.currentTimeMillis() + ModConfig.general.delay * 60000L;
         this.start();
     }
     

@@ -64,7 +64,7 @@ public class BackupInformation implements Comparable
     }
     
     public File getDir() {
-        return new File(ModConfig.location + "/" + this.world + "/" + this.year + "/" + this.month + "/" + this.day);
+        return new File(ModConfig.general.location + "/" + this.world + "/" + this.year + "/" + this.month + "/" + this.day);
     }
     
     @Override
